@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Camilo Guzmán</title>
+        <link rel="icon" type="image/png" href="Imágenes/Torre1.png">
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+        <!--<link rel="stylesheet" href="css/media1.css" media="screen and (max-width:768px)"/>-->
+        <!--<link rel="stylesheet" href="css/estilos_1.css">-->
+        <!--<style>
+            @media screen and (max-width: 768px) {
+                body {
+                    border: 10px solid blue;
+                }
+            }
+        </style>-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            header{
+                background: lightskyblue;
+            }
+            /*selector de etiqueta header - section - article - nav*/
+            /*selector descendente*/
+            /*body header div nav ol li a*/
+            /*selector de clase*/
+            /*.link*/
+            /*selector de id#*/
+            /*#portafolio*/
+            body{
+                font-family: 'Source Sans Pro', sans-serif;
+                margin: 50px;
+                /*border: 1px black solid;*/
+                background-color: #CFD2CD;
+                margin-left: 300px;
+                margin-right: 300px;
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6{
+                font-family: 'Fjalla One', sans-serif;
+                font-weight: normal;    /*tamaño de delineado de la letra*/
+                /* font-style: italic; */
+            }
+            .hero1 h1{
+                font-size: 40px;       /*tamaño de la letra*/
+                line-height: 1.5em;    /*separación entre renglones*/
+                letter-spacing: -.2px;  /*espacio entre letras de una misma palabra*/
+                color: black;        /*color de la fuente*/
+                margin: 0;
+                /*margin: 100px 150px 70px 30px;*/          /*top right bottom left*/
+                /*text-transform: uppercase;*/ /*poner en minúscula o mayúscula*/
+                /*text-decoration: underline;*/ /*para subrayar, tachar, etc*/
+                margin-left: 75px;
+            }
+            .logo {
+                margin-left: 10px;
+            }
+            h1 strong{
+                color: #3F4045; /*color de la letra del 'strong' */
+            }
+            h2{
+                color:#3F4045;
+                text-transform: uppercase;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: bold;
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+            .hero{
+                height: 250px;
+                /*background-image: url('../Imágenes/Camilo Guzmán.jpeg');*/
+                background-color: #919098;
+                /*background-size: 370px 300px;*/ /*tamaño de la imagen*/
+                /*background-repeat: no-repeat;*/ /*quitar la secuencia de repetición de la imagen*/
+                /*background-position-x: right;*/
+                display: flex;
+                align-items:center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            .hero1 {
+                display: contents;
+            }
+            /*.hero-image{
+                object-fit: cover;
+            }*/
+            .portfolio{
+                background: #fafafa;
+                padding: 20px;
+            }
+            .project{
+                /*border-top: 10px solid black;*/    /*tamaño tipo estilo*/
+                /*border-color: black;
+                border-width: 15px;
+                border-style: solid;*/
+                border:1px solid gray;
+                border-radius: 10px;
+                /*border-top-left-radius: 30px;
+                border-bottom-right-radius: 30px;*/
+                /*margin: 10px;*/
+                margin-bottom: 10px;
+                padding: 20px;
+                background: white;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            .project-course{
+                margin: 10px 0;
+            }
+            .project-date,
+            .project-url{
+                margin: 10px 0;
+                text-decoration: none;
+            }
+            .project-url a{
+                text-decoration: none;
+                font-size: 17px;
+            }
+            .project-description{
+                font-size: 20px;
+                text-align: justify;
+            }
+            .project strong{
+                font-family: 'Fjalla One', sans-serif; 
+            }
+            .project-title{
+                font-size: 30px;
+                margin-top: o;
+                margin-bottom: 10px;
+            }
+            .project-details{
+                width: 50%;
+            }
+            .hero-imageContainer{
+                width: auto;
+            }
+            .hero-imageContainer img{
+                max-width: 100%;
+                margin-right: 75px;
+                width: 158px; height: 220px;
+            }
+            .project-imageContainer{
+                width: 500px;
+            }
+            .project-imageContainer img{
+                max-width: 100%;
+            }
+            .header{
+                background-color: #6E6362;
+                color: black;
+                display: flex;
+                height: 70px;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            /*font-weight  poner texto en negrilla*/
+            ol,
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            figure{
+                margin: 0;
+            }
+            .header a{
+                color: black;
+                text-decoration: none; /*quitar el subrayado del enlace*/
+                font-weight: bold;
+            }
+            .header ol{
+                display: flex;
+            }
+            .header a{
+                padding: 0 5px;
+                margin: 0 10px;
+            }
+            .flexbox{
+                display: flex;
+                /*flex-wrap: nowrap;*/ /*ningún elemento caiga*/
+                flex-wrap: wrap;  /*los elementos caen para caber a lo ancho de la página*/
+                /*flex-direction: column;*/
+            }
+            .box{
+                width: 50px;
+                height: 50px;
+                margin: 5px;
+                border: 1px solid red;
+                flex-shrink: 0;
+            }
+            .footer{
+                color: white;
+                background-color: #6E6362;
+                display:flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                border-top: 5px #4E4A59 solid;
+            }
+            .footer img{
+                vertical-align: middle;
+            }
+
+            .footer a{
+                color: white;
+            }
+            .footer p{
+                margin-left: 20px;
+            }
+            .event-list{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                background: #FAFAFA;
+                padding: 8px;
+            }
+            .event-list-title{
+                margin: 0px;
+                padding-left: 20px;
+                background-color: #fafafa;
+            }
+            .event-list-title-1{
+                margin: 0px;
+                padding-left: 20px;
+                
+            }
+            .event{
+                margin: 1%;
+                width: 48%;
+                flex-shrink: 0;  /*r*/
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            .event img{
+                width: 625px;
+                height: 204px;
+                object-fit: cover;
+            }
+            .event-detail{
+                margin: 20px 40px;;
+                margin-top: -40px;
+                background-color: white;
+                position: relative;
+                padding: 20px;
+                text-align: center;
+            }
+            .event-description{
+                text-align: justify;
+
+            }
+            .event-url{
+                color: #3F4045;
+                border: 1px solid;
+                padding: 5px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+            .contact{
+                background-color: #6E6362;
+                color: white;
+                height: 180px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                /*flex-wrap: wrap;*/
+            }
+            .contact p {
+                background-color: #6E6362;
+                color: white;
+                /*height: 180px;*/
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin-left: 20px;
+            }
+            /*.social {
+                border: 1px solid red;
+            }*/
+            .social-link {
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                margin: 10px 10px;
+                background-size: 50px 50px;
+            }
+            .social-link.twitter {
+                background-image: url(./Iconos/twitter_g.png);
+            }
+            .social-link.facebook{
+                background-image: url(./Iconos/facebook_g.png);
+            }
+            .social-link.instagram{
+                background-image: url(./Iconos/instagram_g.png);
+            }
+            .social-link.youtube{
+                background-image: url(./Iconos/youtube_g.png);
+            }
+            
+            .main_container{
+                /*border: 1px solid red;*/
+                max-width: 1700px;
+                /*width: 100%;*/
+                flex: 1;
+                /*width: 1700px;*/
+                margin: 0 auto;
+                display: inherit;
+                justify-content: inherit;
+                align-items: inherit;
+                height: inherit;
+                flex-wrap: inherit;
+                background-color: #6E6362;
+            }
+            .container{
+                /*border: 1px solid red;*/
+                max-width: 1700px;
+                /*width: 100%;*/
+                flex: 1;
+                /*width: 1700px;*/
+                margin: 0 auto;
+                display: inherit;
+                justify-content: inherit;
+                align-items: inherit;
+                height: inherit;
+                flex-wrap: inherit;
+            }
+            
+
+            .burguer-button{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: rgba(0, 0, 0, 0.1);
+                display: none;
+                line-height: 40px;
+                text-align: center;
+                position: fixed;
+                z-index:4;
+                left: 5px;
+                top: 5px;
+                color: blue;
+            }
+
+            /*desktop first: empezar desde el MQ más grande*/
+
+                      
+        </style>
+    </head>
+    <body>
+        <i class="icon-menu burguer-button" id="burguer-menu"></i>
+        <header class="header">
+            <div class="main_container"> 
+                <figure class="logo">
+                    <img src="Imágenes/fir.png" height="40" alt="Propiedad de Camilo Guzmán"/>
+                </figure>
+                    <nav class="menu">
+                            <ol>
+                            <li>
+                                <a class="link" href="#Portafolio">Perfil profesional</a>
+                            </li>
+                            <li>
+                                <a class="link" href="#Estudios">Estudios</a>
+                            </li>
+                            <li>
+                                <a class="link" href="#Experiencia">Experiencia</a>
+                            </li>
+                            <li>
+                                <a class="link" href="#Contacto">Contacto</a>
+                            </li>
+                        </ol>
+                    </nav>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="hero1">
+                <h1>
+                    <strong>William Camilo Guzmán Espitia</strong> <br/> Ingeniero eléctrico <br/>Desarrollador Web
+                </h1>
+                <figure class="hero-imageContainer">
+                    <img class="hero-image" src="Imágenes/Camilo Guzmán.jpeg" width="260" height="300" alt="Principal">
+                </figure>
+            </div>
+        </section>
+        <section id="Portafolio" class="portfolio">
+
+            <div class="container">
+                <h2>Perfil profesional</h2>
+                <article class="project">
+                    <div class="project-details">
+                        <h3 class="project-title">Perfil</h3>
+                        <!--<h6 class="project-course">React Native / React</h6>-->
+                        <p class="project-description">Ingeniero eléctrico de la Universidad Distrital Francisco José de Caldas, 
+                            con habilidades y conocimientos en diseño, planeación, gestión y formulación 
+                            de proyectos del sector eléctrico, con buenas aptitudes a nivel técnico e 
+                            investigativo; en el área técnica, en manejo de AutoCAD 2D y 3D, Matlab, 
+                            ArcGIS, QGis, SDE, ATP y de herramientas ofimáticas (Word, Excel, Access, 
+                            Power Point).</p>
+                        <p class="project-url"><small><strong>Perfil LinkedIn: </strong> <a href="https://www.linkedin.com/in/william-camilo-guzmán-espitia-0b4391101/" target="_blank">www.linkedin.com/in/william-camilo-guzmán-espitia-0b4391101/</small></a></small></p>
+                    </div>
+                <figure class="project-imageContainer">
+                    <img class="project-image" src="Imágenes/Ingeniería eléctrica.jfif" width="500" height="350" alt="Proyecto">
+                </figure>
+                </article>
+                <h2 id="Estudios">Estudios</h2>
+                <article class="project">
+                    <div class="project-details">
+                        <h3 class="project-title">Título pregrado: Ingeniero eléctrico</h3>
+                        <p class="project-date"><small><strong>Universidad:</strong><h4>Universidad Distrital Francisco José de Caldas</h4></small></p>
+                        <p class="project-description">El trabajo de grado tuvo como objetivo realizar la evaluación de demanda de 
+                            energía eléctrica según los hábitos de consumo que se presentan en la actualidad en la población residencial urbana
+                             de la ciudad de Bogotá, a partir de la identificación de tendencias y patrones de consumo característicos de los 
+                             usuarios de energía eléctrica. Para el desarrollo del proyecto se tienen en cuenta varios procesos, los cuales 
+                             consisten en la revisión de estudios realizados sobre el tema en diferentes países y a nivel local, sistematización 
+                             de datos relacionados con la demanda de energía eléctrica y la implementación de una metodología que permita realizar 
+                             la identificación de hábitos de consumo en un grupo aleatorio de usuarios, con el fin de obtener patrones de consumo 
+                             característicos dentro de los mismos.</p>
+                        <p class="project-url"><small><strong>Ver: </strong> <a href="http://repository.udistrital.edu.co/handle/11349/4445" target="_blank">Proyecto de grado</a></small></p>
+                    </div>
+                    <figure class="project-imageContainer">
+                        <img class="project-image" src="Imágenes/1a.png" width="500" height="250" alt="Proyecto de grado">
+                    </figure>
+                </article>
+                <article class="project">
+                    <div class="project-details">
+                        <h3 class="project-title">Complementarios</h3>
+                        <p class="project-date"><small><strong>Plataforma:</strong><h4>Platzi</h4></small></p>
+                        <p class="project-description">
+                            <ul>
+                                <li>Carrera de Gestión de proyectos</li>
+                                <li>Carrera de inglés</li>
+                                <li>--------------------------------------</li>
+                                <li>Desarrollo web / Responsive Design</li>
+                                <li>Introducción a Java SE / Java orientado a objetos</li>
+                                <li>Phyton</li>
+                            </ul>
+                        </p>
+                        <p class="project-url"><small><strong>Ver: </strong> <a href="https://platzi.com/@william-camilo/" target="_blank">Perfil Platzi</a></small></p>
+                        <p class="project-date"><small><strong>Plataforma:</strong><h4>Udemy</h4></small></p>
+                        <p class="project-description">
+                            <ul>
+                                <li>Aleman (A1, A2)</li>
+                                <li>Francés (A1, A2)</li>
+                            </ul>
+                        </p>
+                        <!--<p class="project-url"><small><strong>Ver: </strong> <a href="http://repository.udistrital.edu.co/handle/11349/4445" target="_blank">Proyecto de grado</a></small></p>-->
+                        <p class="project-date"><small><strong>Plataforma:</strong><h4>Sena virtual</h4></small></p>
+                        <p class="project-description">
+                            <ul>
+                                <li>AutoCAD 2D</li>
+                                <li>AutoCAD 3D</li>
+                                <li>Administrativo para jafes de área trabajo seguro en alturas</li>
+                            </ul>
+                        </p>
+                        <!--p class="project-url"><small><strong>Ver: </strong> <a href="http://repository.udistrital.edu.co/handle/11349/4445" target="_blank">Proyecto de grado</a></small></p>-->
+                    </div>
+                    <figure class="project-imageContainer">
+                        <img class="project-image" src="Imágenes/prog.png" width="500" height="250" alt="Proyecto de grado">
+                    </figure>
+                </article>
+            </div>
+        </section>
+        <div class="container">
+            <h2 class="event-list-title">Mi experiencia</h2>
+        </div>
+
+        <section id="Experiencia" class="event-list">
+            <div class="container">
+                <article class="event">
+                   <figure class="event-imageContainer">
+                       <!--<video class="html-video" src="Videos/Prueba.mp4" width="1920" height="1080" controls></video>-->
+                       <img class="event-image" src="Imágenes/tom.jpg" width="500"/>
+                   </figure> 
+                   <div class="event-detail">                   
+                       <h3 class="event-title">Freelance: Desarrollador web/English teacher</h3>
+                       <p class="event-description">Construcción de páginas web con HTML5 Y CSS.<br/>English classes for students who need to learn the language from level A1 to C1.</p>
+                       <a class="event-url" href="/" target="_blank">Ver</a>
+                   </div>
+                </article>
+                <article class="event">
+                   <figure class="event-imageContainer">
+                       <!--<video class="html-video" src="Videos/Prueba.mp4" width="1920" height="1080" controls></video>-->
+                       <img class="event-image" src="Imágenes/Codensa AP.png" width="500"/>
+                   </figure> 
+                   <div class="event-detail">                   
+                       <h3 class="event-title">Enel Codensa</h3>
+                       <p class="event-description">Asignación de trabajo al contratista y control de obras para facturar sobre expansiones y modernización de alumbrado público de sabana y municipios de Bogotá. Atención y respuesta a las áreas de MT del contratista respecto a temas de alumbrado público. Inventario y consolidación de infraestructura de telemáticos.</p>
+                       <a class="event-url" href="https://www.enel.com.co/es/personas.html" target="_blank">Ver</a>
+                   </div>
+                </article>
+                <article class="event">
+                   <figure class="event-imageContainer">
+                       <img class="event-image" src="Imágenes/Qgis.png" width="500"/>
+                   </figure> 
+                   <div class="event-detail">                   
+                       <h3 class="event-title">CAM Colombia Multiservicios S.A.S.</h3>
+                       <p class="event-description">Actualización de la red de baja tensión de Bogotá y área rural de Cundinamarca en el sistema de Codensa ‘SDE’ (Ubicación de las acometidas de los predios en la cartografía por medio de software de información geográfica ‘ArcGIS’ y ‘QGIS’, haciendo la respectiva validación y corrección del vínculo cliente-red con información del consumo eléctrico del usuario, cantidad de acometidas y capacidad del transformador; adicionalmente la asignación de conductor según el tipo de red), reconfiguraciones de alumbrado público (reubicación en el software ‘SDE’ de luminarias en su respectivo punto físico, rótulo y asignación de conductor de la red de alumbrado).</p>
+                       <a class="event-url" href="https://www.http://www.cam-la.com/" target="_blank">Ver</a>
+                   </div>
+                </article>
+                <article class="event">
+                   <figure class="event-imageContainer">
+                       <img class="event-image" src="Imágenes/Planta.jfif" width="500"/>
+                   </figure> 
+                   <div class="event-detail">                   
+                       <h3 class="event-title">Ingenergía Colombia S.A.</h3>
+                       <p class="event-description">Estandarización y diseño de sistemas de generación eléctricos en media y baja tensión (Cálculo de acometidas y alimentadores, tipo de celdas según función y nivel de tensión dentro del circuito, protecciones, selección y cálculo de transformadores de potencia y medición) y sistemas de respaldo. Elaboración de planos en AutoCAD y colaboración en el desarrollo de presupuestos y proyectos.</p>
+                       <a class="event-url" href="https://www.http://www.ingenergia.com.co/" target="_blank">Ver</a>
+                    </div>
+                </article>
+                <!--<article class="event">
+                   <figure class="event-imageContainer">
+                       <img class="event-image" src="Imágenes/Codensa AP.png" width="500"/>
+                   </figure> 
+                   <div class="event-detail">                   
+                       <h3 class="event-title">Enel Codensa</h3>
+                       <p class="event-description">Asignación de trabajo al contratista y control de obras para facturar sobre expansiones y modernización de alumbrado público de sabana y municipios de Bogotá. Atención y respuesta a las áreas de MT del contratista respecto a temas de alumbrado público. Inventario y consolidación de infraestructura de telemáticos.</p>
+                       <a class="event-url" href="https://www.youtube.com/channel/UCVsWK0bZ2ya6eAK7LjBtDQg?view_as=subscriber" target="_blank">Ver</a>
+                   </div>
+                </article>-->
+            </div>
+        </section>
+        <section id="Contacto" class="contact">
+            <div class="container">
+                <form action="/Contacto/" class="form-email">
+                    <h2 class="event-list-title-1">Contacto</h2>
+                    <p><small><strong>Ciudad de residencia: </strong>Bogotá D.C., Colombia</small></small></p>
+                    <p><small><strong>Correo electrónico: </strong>camiloge_91@hotmail.com</small></small></p>
+                    <p><small><strong>Número celular: </strong>-----</small></small></p>
+                    <!--<label for="e-mail">Contacto</label>-->
+                    <!--<input type="text" placeholder="Déjanos tu e-mail" id="e-mail">-->
+                    <!--<input type="submit" value="Button text">-->
+                    <!--<button>Enviar</button>-->
+                </form>
+                <div class="social">
+                    <!--<img class="project-image" src="Imágenes/prog.png" width="500" height="250" alt="Proyecto de grado">-->
+                    <a href="https://twitter.com/camiloguzman_91" class="social-link twitter" target="_blank"></a>
+                    <a href="https://www.facebook.com/Camilo.Guzman91" class="social-link facebook" target="_blank"></a>
+                    <a href="https://www.instagram.com/camiloguzman_91/" class="social-link instagram" target="_blank"></a>
+                    <a href="https://www.youtube.com/channel/UCVsWK0bZ2ya6eAK7LjBtDQg?view_as=subscriber" class="social-link youtube" target="_blank"></a>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <!--<div>
+                    <p>
+                        Curso de desarrollo Web <img src="Imágenes/Logo_mini.png" width="20" alt="Logo">
+                    </p>
+                </div>-->
+                <div>
+                    <p>
+                        Designed by <a href="https://twitter.com/camiloguzman_91" target="_blank">@camiloguzman_91</a>
+                    </p>
+                </div>            
+            </div>
+        </footer>
+        <script>
+            /*console.log('amazing');*/
+            const ipad = window.matchMedia('screen and (max-width: 767px)');
+            const menu = document.querySelector('.menu')
+            /*console.log(menu);*/
+            const burguerButton = document.querySelector('#burguer-menu');
+            /*console.log(burguerButton);*/
+            ipad.addListener(validation)
+            function validation(event){
+                if(event.matches) {
+                burguerButton.addEventListener('click',hideShow)
+             } else {
+                burguerButton.removeEventListener('click',hideShow)
+             }
+            }
+            validation (ipad);
+            function hideShow(){
+                if(menu.classList.contains('is-active')){
+                    menu.classList.remove('is-active');
+                } else{
+                menu.classList.add('is-active');
+                }
+            }
+        </script>        
+    </body>
+</html>
