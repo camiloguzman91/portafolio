@@ -1,0 +1,583 @@
+
+header{
+    background: lightskyblue;
+}
+/*selector de etiqueta header - section - article - nav*/
+/*selector descendente*/
+/*body header div nav ol li a*/
+/*selector de clase*/
+/*.link*/
+/*selector de id#*/
+/*#portafolio*/
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 50px;
+    /*border: 1px black solid;*/
+    background-color: #CFD2CD;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;    /*tamaño de delineado de la letra*/
+    /* font-style: italic; */
+}
+.hero1 h1{
+    font-size: 40px;       /*tamaño de la letra*/
+    line-height: 1.5em;    /*separación entre renglones*/
+    letter-spacing: -.2px;  /*espacio entre letras de una misma palabra*/
+    color: black;        /*color de la fuente*/
+    margin: 0;
+    /*margin: 100px 150px 70px 30px;*/          /*top right bottom left*/
+    /*text-transform: uppercase;*/ /*poner en minúscula o mayúscula*/
+    /*text-decoration: underline;*/ /*para subrayar, tachar, etc*/
+    margin-left: 75px;
+}
+.logo {
+    margin-left: 10px;
+}
+h1 strong{
+    color: #3F4045; /*color de la letra del 'strong' */
+}
+h2{
+    color:#3F4045;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.hero{
+    height: 250px;
+    /*background-image: url('../Imágenes/Camilo Guzmán.jpeg');*/
+    background-color: #919098;
+    /*background-size: 370px 300px;*/ /*tamaño de la imagen*/
+    /*background-repeat: no-repeat;*/ /*quitar la secuencia de repetición de la imagen*/
+    /*background-position-x: right;*/
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.hero1 {
+    display: contents;
+}
+/*.hero-image{
+    object-fit: cover;
+}*/
+.portfolio{
+    background: #fafafa;
+    padding: 20px;
+}
+.project{
+    /*border-top: 10px solid black;*/    /*tamaño tipo estilo*/
+    /*border-color: black;
+    border-width: 15px;
+    border-style: solid;*/
+    border:1px solid gray;
+    border-radius: 10px;
+    /*border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;*/
+    /*margin: 10px;*/
+    margin-bottom: 10px;
+    padding: 20px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.project-course{
+    margin: 10px 0;
+}
+.project-date,
+.project-url{
+    margin: 10px 0;
+    text-decoration: none;
+}
+.project-url a{
+    text-decoration: none;
+    font-size: 17px;
+}
+.project-description{
+    font-size: 20px;
+    text-align: justify;
+}
+.project strong{
+    font-family: 'Fjalla One', sans-serif; 
+}
+.project-title{
+    font-size: 30px;
+    margin-top: o;
+    margin-bottom: 10px;
+}
+.project-details{
+    width: 50%;
+}
+.hero-imageContainer{
+    width: auto;
+}
+.hero-imageContainer img{
+    max-width: 100%;
+    margin-right: 75px;
+    width: 158px; height: 220px;
+}
+.project-imageContainer{
+    width: 500px;
+}
+.project-imageContainer img{
+    max-width: 100%;
+}
+.header{
+    background-color: #6E6362;
+    color: black;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*font-weight  poner texto en negrilla*/
+ol,
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+figure{
+    margin: 0;
+}
+.header a{
+    color: black;
+    text-decoration: none; /*quitar el subrayado del enlace*/
+    font-weight: bold;
+}
+.header ol{
+    display: flex;
+}
+.header a{
+    padding: 0 5px;
+    margin: 0 10px;
+}
+.flexbox{
+    display: flex;
+    /*flex-wrap: nowrap;*/ /*ningún elemento caiga*/
+    flex-wrap: wrap;  /*los elementos caen para caber a lo ancho de la página*/
+    /*flex-direction: column;*/
+}
+.box{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: 1px solid red;
+    flex-shrink: 0;
+}
+.footer{
+    color: white;
+    background-color: #6E6362;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top: 5px #4E4A59 solid;
+}
+.footer img{
+    vertical-align: middle;
+}
+
+.footer a{
+    color: white;
+}
+.footer p{
+    margin-left: 20px;
+}
+.event-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #FAFAFA;
+    padding: 8px;
+}
+.event-list-title{
+    margin: 0px;
+    padding-left: 20px;
+    background-color: #fafafa;
+}
+.event-list-title-1{
+    margin: 0px;
+    padding-left: 20px;
+    
+}
+.event{
+    margin: 1%;
+    width: 48%;
+    flex-shrink: 0;  /*r*/
+    border-radius: 10px;
+    overflow: hidden;
+}
+.event img{
+    width: 625px;
+    height: 204px;
+    object-fit: cover;
+}
+.event-detail{
+    margin: 20px 40px;;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+.event-description{
+    text-align: justify;
+
+}
+.event-url{
+    color: #3F4045;
+    border: 1px solid;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.contact{
+    background-color: #6E6362;
+    color: white;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*flex-wrap: wrap;*/
+}
+.contact p {
+    background-color: #6E6362;
+    color: white;
+    /*height: 180px;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+/*.social {
+    border: 1px solid red;
+}*/
+.social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px;
+    background-size: 50px 50px;
+}
+.social-link.twitter {
+    background-image: url(./Iconos/twitter_g.png);
+}
+.social-link.facebook{
+    background-image: url(./Iconos/facebook_g.png);
+}
+.social-link.instagram{
+    background-image: url(./Iconos/instagram_g.png);
+}
+.social-link.youtube{
+    background-image: url(./Iconos/youtube_g.png);
+}
+
+.main_container{
+    /*border: 1px solid red;*/
+    max-width: 1700px;
+    /*width: 100%;*/
+    flex: 1;
+    /*width: 1700px;*/
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+    background-color: #6E6362;
+}
+.container{
+    /*border: 1px solid red;*/
+    max-width: 1700px;
+    /*width: 100%;*/
+    flex: 1;
+    /*width: 1700px;*/
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+
+.burguer-button{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index:4;
+    left: 5px;
+    top: 5px;
+    color: #6E6362;
+    background-image: url(./Iconos/menu_g.png);
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 1440px){
+    .project {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1024px){
+    .portfolio{
+        padding: 0;
+    }
+    .container{
+        padding: 10px 1em;
+    }
+
+    .hero{
+        height: auto;
+        justify-content: center;
+        /*position: relative;
+        overflow: hidden;
+        padding: 2em;*/
+    }
+    /*.hero-image {
+        position: absolute;        para que la imagen quede de fondo y texto superpuesto
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }*/
+    .main_container {
+        justify-content: center;
+    }
+    h1{
+        font-size: 2em;
+        
+        /*z-index: 2;            superpone el texto encima de la imagen de .hero-image*/
+    }
+    .hero1 h1 {
+        margin-left: 0px;
+        text-align: center;
+        
+    }                
+    .event-list-title {
+        padding-left: 0;
+    }
+    .project{
+        display: block;
+    }
+    .hero-imageContainer{
+        width: 100%;
+        text-align: center;
+    }
+    .hero-imageContainer img {
+        margin: 0;
+    }
+    .project-imageContainer{
+        width: auto;
+        text-align: center;
+    }
+    .project-details{
+        width: auto;
+        /*font-size: 17px;*/
+    }
+    .project-course, .project-date, .project-url{
+        margin: .4em 0;
+    }
+    .project-title{
+        font-size: 1.5em;
+        margin-bottom: 0.3em;
+    }
+    .project-url{
+        font-size: 1em;
+    }
+    .project-course{
+        font-size: 1em;
+    }
+    .project-date{
+        font-size: .7em;
+    }
+    .project-description{
+        font-size: 0.8em;
+    }
+    .event{
+        width: auto;
+        flex-shrink: initial;
+    }
+    /*.event-image{
+        width: 100%;
+    }*/
+    .event img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .burguer-button{
+        display: block;
+        cursor: pointer;
+    }
+    .hero, .hero1 {
+        height: auto;
+        /*position: relative;*/                   
+    }
+    .hero1 h1 {
+        
+        text-align: center;
+    }
+    
+    h1{
+        font-size: 2em;
+        /*z-index: 2;            superpone el texto encima de la imagen de .hero-image*/
+    }
+    .header{
+        display: block;
+        height: auto;
+    }
+    .header ol{
+        display: block;
+    }
+    .header ol li{
+        height: 50px;
+    }
+    .header a{
+        display: block;
+        justify-content: center;
+        height: 40px;
+        font-size: 2em;
+        text-decoration: underline;
+        margin-bottom: .5em;
+    }
+    .header .logo {
+        text-align: center;
+    }
+    .menu{
+        position: fixed;
+        background: rgb(63, 64, 69, 0.8);
+        z-index: 3;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+    }
+    .menu.is-active{
+        left: 0;
+    }
+    .project{
+        display: block;
+    }
+    .hero-imageContainer{
+        width: 100%;
+        text-align: center;
+    }
+
+    .project-imageContainer{
+        width: auto;
+        text-align: center;
+    }
+    .project-details{
+        width: auto;
+        /*font-size: 17px;*/
+    }
+    .project-course, .project-date, .project-url{
+        margin: .4em 0;
+    }
+    .project-title{
+        font-size: 1.5em;
+        margin-bottom: 0.3em;
+    }
+    .project-url{
+        font-size: 1em;
+    }
+    .project-course{
+        font-size: 1em;
+    }
+    .project-date{
+        font-size: .7em;
+    }
+    .project-description{
+        font-size: 0.8em;
+    }
+    .event{
+        width: auto;
+        flex-shrink: initial;
+    }
+    /*.event-image{
+        width: 100%;
+    }*/
+    .event img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    /*h1 {
+        font-size: 1em;
+    }*/
+    .hero-imageContainer{
+        width: 100%;
+        text-align: center;
+    }
+    .hero-imageContainer img {
+        margin: 0;
+    }
+    .project-details{
+        width: auto;
+        font-size: 12px;
+    }
+    .event-detail{
+        /*1em = 16px*/
+        /*margin: -40px 10px 10px 10px;*/
+        margin: -2em .5em .5em;
+        padding: 1em; 
+    }
+    .contact{
+        height: auto;
+        padding: 1.5em 0;
+        text-align: center;
+        display: block;
+    }
+    .form-email button{
+        margin: 1em auto;
+    }
+    .form-email h3{
+        margin-top: 0;
+    }
+    footer{
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
+    }
+    .container{
+        display: block;
+        text-align: center;
+        font-weight: bold;
+    }   
+}
+/*desktop first: empezar desde el MQ más grande*/
+@media screen and (max-width: 320px){
+    h1{
+        font-size: 1.8em;
+        /*background: rgba(0,0,0,0.5)*/
+    }
+    .hero{
+        padding: 1em 1em;
+    }
+}
