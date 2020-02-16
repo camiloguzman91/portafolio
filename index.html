@@ -555,7 +555,14 @@
                     width: 100%;
                 }
             }
-
+            @media screen and (max-width: 513px){
+                .contact {
+                    height: 230px;
+                    display: flow-root;
+                }
+                .social {
+                    text-align: center;
+                }
             @media screen and (max-width: 480px){
                 /*h1 {
                     font-size: 1em;
@@ -605,7 +612,17 @@
                     display: block;
                     text-align: center;
                     font-weight: bold;
-                }   
+                }
+                .contact p {
+                    margin-left: 0px;
+                    display: flow-root;
+                }
+                .footer p {
+                    margin-left: 0px;
+                }
+                .event-list-title-1 {
+                    padding-left: 0px;
+                }
             }
             /*desktop first: empezar desde el MQ más grande*/
             @media screen and (max-width: 320px){
