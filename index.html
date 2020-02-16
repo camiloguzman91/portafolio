@@ -238,8 +238,10 @@
                 overflow: hidden;
             }
             .event img{
-                width: 625px;
-                height: 204px;
+                width: 100%;
+                height: 100%;
+                max-width: 631px;
+                max-height: 212px;
                 object-fit: cover;
             }
             .event-detail{
@@ -347,6 +349,16 @@
                 color: #6E6362;
                 background-image: url(./Iconos/menu_g.png);
                 background-repeat: no-repeat;
+            }
+            @media screen and (max-width: 1562px){
+                .project-details {
+                    width: auto;
+                }
+
+                .project-imageContainer {
+                    width: 100%;
+                    text-align: center;
+                }
             }
             @media screen and (max-width: 1440px){
                 .project {
@@ -684,6 +696,14 @@
                 <article class="project">
                     <div class="project-details">
                         <h3 class="project-title">Complementarios</h3>
+                        <p class="project-date"><small><strong>Idiomas:</strong></small></p>
+                        <p class="project-description">
+                            <ul>
+                                <li>Inglés (Alto). Certificaciones: American school way || Platzi</li>
+                                <li>Aleman (Básico). Certificación: Udemy</li>
+                                <li>Francés (Básico). Certificación: Udemy</li>
+                            </ul>
+                        </p>
                         <p class="project-date"><small><strong>Plataforma:</strong><h4>Platzi</h4></small></p>
                         <p class="project-description">
                             <ul>
@@ -709,7 +729,7 @@
                             <ul>
                                 <li>AutoCAD 2D</li>
                                 <li>AutoCAD 3D</li>
-                                <li>Administrativo para jafes de área trabajo seguro en alturas</li>
+                                <li>Administrativo para jefes de área trabajo seguro en alturas</li>
                             </ul>
                         </p>
                         <p class="project-date"><small><strong>Plataforma:</strong><h4>Cámara de comercio de Bogotá</h4></small></p>
